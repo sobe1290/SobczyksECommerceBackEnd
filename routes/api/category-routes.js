@@ -3,7 +3,7 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
-router.get('/categories', (req, res) => {
+router.get('/', (req, res) => {
   Category.findAll().then((categoryData) => {
     res.json(categoryData);
   });
