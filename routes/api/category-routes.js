@@ -2,8 +2,6 @@ const router = require('express').Router();
 const sequelize = require('sequelize');
 const { Category, Product } = require('../../models');
 
-// The `/api/categories` endpoint
-
 router.get('/', async (req, res) => {
   try {
     const CategoryData = await Category.findAll({
