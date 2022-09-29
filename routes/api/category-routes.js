@@ -2,6 +2,7 @@ const router = require('express').Router();
 const sequelize = require('sequelize');
 const { Category, Product } = require('../../models');
 
+// GET all categories
 router.get('/', async (req, res) => {
   try {
     const CategoryData = await Category.findAll({
@@ -16,6 +17,8 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+// GET Category by ID
 
 router.get('/:id', async (req, res) => {
   try {
@@ -37,6 +40,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+// POST - Create a category
 router.post('/', async (req, res) => {
   try {
     const createdACategory = await Category.create({
@@ -48,6 +52,7 @@ router.post('/', async (req, res) => {
   }
 });
 
+// PUT- Update a cateogry by ID
 router.put('/:id', async (req, res) => {
   try {
     const updateCategory = await Category.update(
@@ -60,6 +65,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
+// DELETE - Delete a category by id
 router.delete('/:id', async (req, res) => {
   try {
     const deleteCategory = await Category.destroy(
