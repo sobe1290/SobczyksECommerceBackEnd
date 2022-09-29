@@ -72,6 +72,12 @@
 
   Here is a link to a video walkthrough of how to use it:
 
+  Screencastify Link:
+  https://watch.screencastify.com/v/kpTSBnz1vFkXaHsqbJ8k
+
+  Google Drive Link:
+  https://drive.google.com/file/d/12F8lsfV2EJiYRRojqbY-F4-bMH9GSr_J/view
+
  
   
 
